@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Conta\" />
-    <Folder Include="Transacao\" />
     <Folder Include="Notificacao\" />
   </ItemGroup>
 

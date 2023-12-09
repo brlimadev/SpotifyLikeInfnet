@@ -15,7 +15,7 @@ namespace SpotifyLike.Domain.Streaming.ValueObject
         public static explicit operator Monetario(Decimal valor) => new Monetario(valor);
 
 
-        public Monetario(int valor)
+        public Monetario(Decimal valor)
         {
             if (valor < 0)
                 throw new ArgumentException("Duração da música não pode ser negativa");

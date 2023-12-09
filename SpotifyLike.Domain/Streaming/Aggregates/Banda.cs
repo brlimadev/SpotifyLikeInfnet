@@ -14,7 +14,7 @@ namespace SpotifyLike.Domain.Streaming.Aggregates
         public String Descricao { get; set; }
         public String BackDrop { get; set; }
         public Duracao Duracao { get; set; }
-        public List<Album> Albums { get; set; } = new List<Album>();
+        public List<Transacao> Albums { get; set; } = new List<Transacao>();
 
     }
 }
