@@ -1,0 +1,21 @@
+﻿using SpotifyLike.Domain.Streaming.ValueObject;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SpotifyLike.Domain.Streaming.Aggregates
+{
+    public class Album
+    {
+        public Guid Id { get; set; }
+        public String Nome { get; set; }
+        public List<Musica> Musica { get; set; } = new List<Musica>();
+
+        public void AdicionarMusica(Musica musica) => this.AdicionarMusica(musica);
+        public void AdicionarMusica(List<Musica> musica) => this.AdicionarMusica(musica);
+            
+        
+    }
+}
