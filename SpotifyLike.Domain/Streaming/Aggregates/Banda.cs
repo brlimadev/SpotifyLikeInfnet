@@ -1,5 +1,4 @@
-﻿using SpotifyLike.Domain.Streaming.ValueObject;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +9,12 @@ namespace SpotifyLike.Domain.Streaming.Aggregates
     public class Banda
     {
         public Guid Id { get; set; }
-        public String Name { get; set; }
+        public String Nome { get; set; }
         public String Descricao { get; set; }
-        public String BackDrop { get; set; }
-        public Duracao Duracao { get; set; }
-        public List<Transacao> Albums { get; set; } = new List<Transacao>();
+        public String Backdrop { get; set; }
+        public List<Album> Albums { get; set; } = new List<Album>();
 
+        public void AdicionarAlbum(Album album) =>
+            this.Albums.Add(album);
     }
 }
