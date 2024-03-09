@@ -20,7 +20,6 @@ namespace Spotify.Application.Conta.Dto
         public string Email { get; set; }
 
         [Required]
-        [JsonIgnore()]
         public string Senha { get; set; }
 
         [Required]

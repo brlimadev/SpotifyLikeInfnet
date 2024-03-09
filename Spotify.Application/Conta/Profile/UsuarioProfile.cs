@@ -21,6 +21,8 @@ namespace Spotify.Application.Conta.Profile
                 var plano = s.Assinaturas?.FirstOrDefault(a => a.Ativo)?.Plano;
                 if (plano != null)
                     d.PlanoId = plano.Id;
+                d.Senha = "xxxxxxxxx";
+
             });
 
             CreateMap<CartaoDto, Cartao>()
