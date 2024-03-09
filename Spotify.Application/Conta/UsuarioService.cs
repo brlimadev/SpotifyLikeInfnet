@@ -1,16 +1,16 @@
-﻿
-    using AutoMapper;
-    using Spotify.Application.Conta.Dto;
-    using SpotifyLike.Domain.Conta.Agreggates;
-    using SpotifyLike.Domain.Streaming.Aggregates;
-    using SpotifyLike.Domain.Transacao.Agreggates;
-    using SpotifyLike.Repository.Repository;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
+﻿using System;
+using AutoMapper;
+using Spotify.Application.Conta.Dto;
+using SpotifyLike.Domain.Conta.Agreggates;
+using SpotifyLike.Domain.Streaming.Aggregates;
+using SpotifyLike.Domain.Transacao.Agreggates;
+using SpotifyLike.Repository.Repository;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-        namespace Spotify.Application.Conta
+namespace Spotify.Application.Conta
 {
     public class UsuarioService
     {
