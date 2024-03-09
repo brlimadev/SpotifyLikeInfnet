@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLike.Repository", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpotifyLike.Api", "SpotifyLike.Api\SpotifyLike.Api.csproj", "{A98E39D2-95FE-45A9-8DCF-61B3EC760273}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify.Application", "SpotifyLike.Application\Spotify.Application.csproj", "{698F37CB-D008-48C0-AB24-B3C70456EB1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A98E39D2-95FE-45A9-8DCF-61B3EC760273}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A98E39D2-95FE-45A9-8DCF-61B3EC760273}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A98E39D2-95FE-45A9-8DCF-61B3EC760273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{698F37CB-D008-48C0-AB24-B3C70456EB1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{698F37CB-D008-48C0-AB24-B3C70456EB1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{698F37CB-D008-48C0-AB24-B3C70456EB1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{698F37CB-D008-48C0-AB24-B3C70456EB1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
