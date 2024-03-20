@@ -1,12 +1,71 @@
+Aula 01:
+
 - 1 : Criar o Banco de dados LOCALDB
 
--- 1.2 : Dentro do AppSettings na ConnectionString
-
+-- 1.2 : Dentro do AppSettings.js na ConnectionString
 --- 1.2.1 : Criar a string de conexão
         "ConnectionStrings": {
-            "SpotifyConnection": "Data Source=(LocalDB)\\MSSQLLocalDB; Integrated Security=True; Initial Catalog=SpotifyDatabase"
+            "SpotifyConnection":                    //Nome da Variavel de conexão
+            "Data Source=(LocalDB)\\MSSQLLocalDB;   //Fonte de dados
+            Integrated Security=True;               //Logar usando a Credencial do Windows
+            Initial Catalog=SpotifyDatabase"        // O nome da base de dados
           }
 
+ -- 1.3 : Adicionar o pacote do Framework
+ -- 1.3.1 : Botão direito em cima da solução no caso API pq é aonde esta o Program.cs >> Manage Nuget Packages
+ ---- 1.3.1 Instalar o Microsoft.EntityFrameworkCore // Abstração do Banco de dados somete o Provider que vai se conectar com o Banco pra cada tipo tem o seu core, postgree, oracle etc
+ ---- 1.3.1 Instalar o Microsoft.EntityFrameworkCore.SqlServer
+ ---- 1.3.1 Instalar o Microsoft.EntityFrameworkCore.Design // Pacote obrigatório pra usar migrations
 
+
+ -- 1.4 : Igualar as versoes do EF dos projetos 
+ --- 1.4.1 : Clica com o direito na SOLUÇÂO GERAL >> Manage Nuget Package for Solutions
+
+
+
+ -- 1.5 : Dentro do Program.cs Configurar o Banco de dados
+ --- 1.5.1 : 
+         builder.Services.AddDbContext<SpotifyLikeContext>(c =>
+        {
+            c.UseLazyLoadingProxies()
+             .UseSqlServer(builder.Configuration.GetConnectionString("SpotifyConnection"));         // Nome da Conexão
+        });
+--- 1.5.2 : Criar a referência do Projeto de Api para o Projeto de Repositorio
+---- 1.5.2.1 : Clicar com o Direito em cima do Projeto de Api Add >> Project References
+
+
+-- 1.6 : Instalar o EF Toole para Levantar a base de dados com o EF core Tools Le o projeto com Output e Ferramenta de linha de comando lendo o projeto onde esta o mapeamento e o os outputs
+--- 1.6.1 : dotnet tool install --global dotnet-ef
+
+-- 1.7 : migration cria o script
+-- 1.7 : database roda o script
+-- 1.7 : Clica com o direito em cima da solução open folder in file explorer pra pegar o endereço
+-- 1.7 : cmd C:\Users\Bruno\source\repos\brlimadev\SpotifyLikeInfnet
+-- 1.7 : dotnet ef migrations --help
+-- 1.7 : vamos usar o add 
+-- 1.7 : pra entender o add 
+-- 1.7 : dotnet ef migrations add --help
+-- 1.7 : parametros
+---1.7.1 : -o output saida se nao especificar usa o default
+---1.7.2 : -c contexto a base o spotfylikecontext
+---1.7.3 : -p projeto aonde ta o mapping o repositorio
+---1.7.4 : -s projeto onde ta configurado o banco de dados
+---1.7.5 : Como ficou o comando(Lembrando que tem que ta tudo na mesma linha): 
+---1.7.5.1 : dotnet ef migrations add NomeDaBaseInicial     -c SpotifyLikeContext      -p C:\Users\Bruno\source\repos\brlimadev\SpotifyLikeInfnet\SpotifyLike.Repository\SpotifyLike.Repository.csproj     -s C:\Users\Bruno\source\repos\brlimadev\SpotifyLikeInfnet\SpotifyLike.Api\SpotifyLike.Api.csproj
+
+-- 1.8 : Abrir o Sql Server pelo visual studio
+-- View >> Server Explorer >> aba 
+>> Data Connections >> Add Conection >> Sql Server 
+>> Server Name: (LocalDB)\MSSQLLocalDB >> Authentication: Windows Authentication >> Test Connection
+>> Depois de testar em Select database name carregar 
+ Não consegui pelo visual studio abri o ssms joguei la e foi
+
+
+ 
+ builder.Services.AddDbContext<SpotifyLikeContext>(c =>
+{
+    c.UseLazyLoadingProxies()
+     .UseSqlServer(builder.Configuration.GetConnectionString("SpotifyConnection"));
+});
 
 Instalando os FrameWorks	
