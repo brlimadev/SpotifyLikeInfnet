@@ -54,14 +54,17 @@ Aula 01:
 ---1.7.5.1 : dotnet ef migrations add NomeDaBaseInicial     -c SpotifyLikeContext      -p C:\Users\Bruno\source\repos\brlimadev\SpotifyLikeInfnet\SpotifyLike.Repository\SpotifyLike.Repository.csproj     -s C:\Users\Bruno\source\repos\brlimadev\SpotifyLikeInfnet\SpotifyLike.Api\SpotifyLike.Api.csproj
 
 -- 1.8 : Abrir o Sql Server pelo visual studio
--- View >> Server Explorer >> aba 
->> Data Connections >> Add Conection >> Sql Server 
->> Server Name: (LocalDB)\MSSQLLocalDB >> Authentication: Windows Authentication >> Test Connection
->> Depois de testar em Select database name carregar 
- Não consegui pelo visual studio abri o ssms joguei la e foi
+--- 1.8 : -- View >> Server Explorer >> aba 
+--- 1.8 : >> Data Connections >> Add Conection >> Sql Server 
+--- 1.8 : >> Server Name: (LocalDB)\MSSQLLocalDB >> Authentication: Windows Authentication >> Test Connection
+--- 1.8 : >> Depois de testar em Select database name carregar 
+--- 1.8 :  Não consegui pelo visual studio abri o ssms joguei la e foi
+
+-- 1.9 : Rodar o script para criar o banco
+-- dotnet ef database update    -c SpotifyLikeContext      -p C:\Users\Bruno\source\repos\brlimadev\SpotifyLikeInfnet\SpotifyLike.Repository\SpotifyLike.Repository.csproj     -s C:\Users\Bruno\source\repos\brlimadev\SpotifyLikeInfnet\SpotifyLike.Api\SpotifyLike.Api.csproj
 
 
- 
+
  builder.Services.AddDbContext<SpotifyLikeContext>(c =>
 {
     c.UseLazyLoadingProxies()

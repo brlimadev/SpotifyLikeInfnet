@@ -11,7 +11,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLike.Repository", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpotifyLike.Api", "SpotifyLike.Api\SpotifyLike.Api.csproj", "{A98E39D2-95FE-45A9-8DCF-61B3EC760273}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spotify.Application", "Spotify.Application\Spotify.Application.csproj", "{ABD16A46-12F6-4CF2-B936-33346A70E234}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spotify.Application", "Spotify.Application\Spotify.Application.csproj", "{ABD16A46-12F6-4CF2-B936-33346A70E234}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PassoAPasso", "PassoAPasso", "{59A78675-85EE-4CD5-9B2B-641BE45AFE75}"
+	ProjectSection(SolutionItems) = preProject
+		PassoAPasso.txt = PassoAPasso.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
