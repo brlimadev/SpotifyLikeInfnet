@@ -1,0 +1,12 @@
+- 1 : Criar o Banco de dados LOCALDB
+
+-- 1.2 : Dentro do AppSettings na ConnectionString
+
+--- 1.2.1 : Criar a string de conexão
+        "ConnectionStrings": {
+            "SpotifyConnection": "Data Source=(LocalDB)\\MSSQLLocalDB; Integrated Security=True; Initial Catalog=SpotifyDatabase"
+          }
+
+
+
+Instalando os FrameWorks	
