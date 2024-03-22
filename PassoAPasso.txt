@@ -66,6 +66,20 @@ Aula 01:
 ---- Confirmar se falta algo no final da aula
 
 
+Aula 05:
+
+>> Instalar o node, buscar no google node
+>> pra verificar se ja tem instalado só jogar no cmd do windows
+>> node -v
+>> npm -v
+>> Reinicia a maquina
+>> npm install -g @angular/cli
+>> entra na pasta do front no repos cd 
+        C:\Users\brlim\source\repos\SpotifyLikeInfnet\frontend
+>>e digita code .
+>> Ele abre no vscode
+>> se nao abrir da um npm install
+
 Aula 06:
 
 1.	Rotas é aonde queremos chegar pra mudar o conteúdo como se fosse no MVC um renderBody ou a view e os htmls
